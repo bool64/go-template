@@ -7,4 +7,11 @@
 ![Code lines](https://sloc.xyz/github/bool64/go-library-template/?category=code)
 ![Comments](https://sloc.xyz/github/bool64/go-library-template/?category=comments)
 
-Library template with GitHub actions for Go. <!--- TODO Change description -->
+<!--- TODO Update README.md -->
+
+Library template with GitHub actions for Go.
+
+## Usage
+
+Create a new repository from this template, check out it and run `./run_me.sh` to replace template name with name of
+your repository.
