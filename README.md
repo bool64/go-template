@@ -9,7 +9,7 @@
 
 <!--- TODO Update README.md -->
 
-Library template with GitHub actions for Go.
+Project template with GitHub actions for Go.
 
 ## Usage
 
