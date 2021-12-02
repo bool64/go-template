@@ -3,9 +3,14 @@ set -e
 
 # Init script to kick-start your project
 url=$(git remote get-url origin)
-gh_repo=${url#"git@github.com:"}
-gh_repo=${gh_repo#"https://github.com/"}
+
+url_nopro=${url#*//}
+url_noatsign=${url_nopro#*@}
+
+gh_repo=${url_noatsign#"github.com:"}
+gh_repo=${gh_repo#"github.com/"}
 gh_repo=${gh_repo%".git"}
+
 copyright="$(date +%Y) $(git config user.name)"
 project_name=$(basename $gh_repo)
 
