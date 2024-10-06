@@ -11,6 +11,39 @@
 
 Project template with GitHub actions for Go.
 
+## Install
+
+```
+go install github.com/bool64/go-template@latest
+$(go env GOPATH)/bin/go-template --help
+```
+
+Or download binary from [releases](https://github.com/bool64/go-template/releases).
+
+### Linux AMD64
+
+```
+wget https://github.com/bool64/go-template/releases/latest/download/linux_amd64.tar.gz && tar xf linux_amd64.tar.gz && rm linux_amd64.tar.gz
+./go-template -version
+```
+
+### Macos Intel
+
+```
+wget https://github.com/bool64/go-template/releases/latest/download/darwin_amd64.tar.gz && tar xf darwin_amd64.tar.gz && rm darwin_amd64.tar.gz
+codesign -s - ./go-template
+./go-template -version
+```
+
+### Macos Apple Silicon (M1, etc...)
+
+```
+wget https://github.com/bool64/go-template/releases/latest/download/darwin_arm64.tar.gz && tar xf darwin_arm64.tar.gz && rm darwin_arm64.tar.gz
+codesign -s - ./go-template
+./go-template -version
+```
+
+
 ## Usage
 
 Create a new repository from this template, check out it and run `./run_me.sh` to replace template name with name of
